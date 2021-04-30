@@ -40,18 +40,5 @@ class MainActivity : AppCompatActivity() {
         calcComponents.add(CalculatorComponent("="))
         numberGrid.adapter = CalculatorGridAdapter(calcComponents)
         numberGrid.layoutManager = GridLayoutManager(this, 4)
-
-//        val operatorGrid = findViewById<View>(R.id.operator_grid) as RecyclerView
-//        val operators = mutableListOf<Operator>()
-//        operators.add(Operator(operator = "CLEAR"))
-//        operators.add(Operator(operator = "."))
-//        operators.add(Operator(operator = "+/-"))
-//        operators.add(Operator(operator = "-"))
-//        operators.add(Operator(operator = "+"))
-//        operators.add(Operator(operator = "*"))
-//        operators.add(Operator(operator = "/"))
-//        operators.add(Operator(operator = "="))
-//        operatorGrid.adapter = OperatorGridAdapter(operators)
-//        operatorGrid.layoutManager = GridLayoutManager(this, 3)
     }
 }

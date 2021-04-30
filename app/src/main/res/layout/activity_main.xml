@@ -9,10 +9,10 @@
         android:id="@+id/result_view"
         android:layout_width="match_parent"
         android:layout_height="175dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="4dp"
         android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/calc_component_view_box"
         android:textSize="30sp" />
 
@@ -20,8 +20,8 @@
         android:id="@+id/calc_grid"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginStart="4dp"
-        android:layout_marginEnd="4dp"
         android:layout_below="@+id/result_view"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp" />
 </RelativeLayout>
