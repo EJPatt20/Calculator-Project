@@ -13,10 +13,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val numberGrid = findViewById<View>(R.id.number_grid) as RecyclerView
+        val numberGrid = findViewById<View>(R.id.calc_grid) as RecyclerView
         val calcComponents = mutableListOf<CalculatorComponent>()
         calcComponents.add(CalculatorComponent("C"))
-        calcComponents.add(CalculatorComponent("()"))
+        calcComponents.add(CalculatorComponent("( )"))
         calcComponents.add(CalculatorComponent("%"))
         calcComponents.add(CalculatorComponent("⬅"))
         for (i in 1..3) {
