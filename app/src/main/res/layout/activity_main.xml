@@ -8,13 +8,13 @@
     <TextView
         android:id="@+id/result_view"
         android:layout_width="match_parent"
-        android:layout_height="175dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginBottom="8dp"
+        android:layout_height="@dimen/display_box_height_dp"
+        android:layout_marginStart="@dimen/baseline_half"
+        android:layout_marginTop="@dimen/baseline"
+        android:layout_marginEnd="@dimen/baseline_half"
+        android:layout_marginBottom="@dimen/baseline"
         android:background="@drawable/calc_component_view_box"
-        android:textSize="30sp" />
+        android:textSize="@dimen/display_text_sp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/calc_grid"
@@ -22,6 +22,6 @@
         android:layout_height="match_parent"
         android:layout_below="@+id/result_view"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="4dp"
-        android:layout_marginEnd="4dp" />
+        android:layout_marginStart="@dimen/baseline_half"
+        android:layout_marginEnd="@dimen/baseline_half" />
 </RelativeLayout>

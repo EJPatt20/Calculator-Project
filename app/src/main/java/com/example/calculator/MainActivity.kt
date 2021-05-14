@@ -6,7 +6,7 @@ import android.view.View
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.calculator.adapters.CalculatorGridAdapter
-import com.example.calculator.data.CalculatorComponent
+import com.example.calculator.data.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,29 +15,29 @@ class MainActivity : AppCompatActivity() {
 
         val numberGrid = findViewById<View>(R.id.calc_grid) as RecyclerView
         val calcComponents = mutableListOf<CalculatorComponent>()
-        calcComponents.add(CalculatorComponent("C"))
-        calcComponents.add(CalculatorComponent("( )"))
-        calcComponents.add(CalculatorComponent("%"))
-        calcComponents.add(CalculatorComponent("⬅"))
+        calcComponents.add(ClearButtonComponent())
+        calcComponents.add(ParenthesisButtonComponent())
+        calcComponents.add(PercentButtonComponent())
+        calcComponents.add(PlusButtonComponent())
         for (i in 1..3) {
-            val number = CalculatorComponent(i.toString())
+            val number = NumberButtonComponent(i.toString())
             calcComponents.add(number)
         }
-        calcComponents.add(CalculatorComponent("÷"))
+        calcComponents.add(DivideButtonComponent())
         for (i in 4..6) {
-            val number = CalculatorComponent(i.toString())
+            val number = NumberButtonComponent(i.toString())
             calcComponents.add(number)
         }
-        calcComponents.add(CalculatorComponent("×"))
+        calcComponents.add(MultiplyButtonComponent())
         for (i in 7..9) {
-            val number = CalculatorComponent(i.toString())
+            val number = NumberButtonComponent(i.toString())
             calcComponents.add(number)
         }
-        calcComponents.add(CalculatorComponent("-"))
-        calcComponents.add(CalculatorComponent("0"))
-        calcComponents.add(CalculatorComponent("."))
-        calcComponents.add(CalculatorComponent("+/-"))
-        calcComponents.add(CalculatorComponent("="))
+        calcComponents.add(MinusButtonComponent())
+        calcComponents.add(NumberButtonComponent("0"))
+        calcComponents.add(DecimalButtonComponent())
+        calcComponents.add(SignButtonComponent())
+        calcComponents.add(EqualsButtonComponent())
         numberGrid.adapter = CalculatorGridAdapter(calcComponents)
         numberGrid.layoutManager = GridLayoutManager(this, 4)
     }
