@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="zero_dp">0dp</dimen>
+    <dimen name="divider_height_half">0.5dp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="baseline_quarter">2dp</dimen>
+    <dimen name="baseline_half">4dp</dimen>
+    <dimen name="baseline">8dp</dimen>
+    <dimen name="one_hundred_dp">100dp</dimen>
+    <dimen name="display_box_height_dp">175dp</dimen>
+
+    <dimen name="display_text_sp">32sp</dimen>
+    <dimen name="component_text_sp">32sp</dimen>
+
+
+</resources>
